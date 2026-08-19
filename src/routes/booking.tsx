@@ -152,7 +152,7 @@ function Booking() {
                     required
                     type="tel"
                     className={`${field} mt-2`}
-                    placeholder="+91 91941 41411"
+                    placeholder="+919194141411"
                   />
                 </label>
                 <label className="block text-sm">
@@ -281,7 +281,7 @@ function Booking() {
                     href="tel:+919194141411"
                     className="font-display text-2xl hover:text-gold transition-colors duration-300"
                   >
-                    +91 91941 41411
+                    +919194141411
                   </a>
                   <a
                     href="tel:+918755557544"
