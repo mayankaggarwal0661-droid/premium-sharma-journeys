@@ -24,7 +24,7 @@ export const Route = createFileRoute("/booking")({
   component: Booking,
 });
 
-const trips = ["Outstation", "Airport transfer", "Local hire (8 hrs)", "Tour package"];
+const trips = ["Outstation", "Airport transfer", "Local hire", "Tour package"];
 
 const field =
   "w-full rounded-lg border border-input bg-card px-4 py-3 text-sm outline-none transition-shadow duration-300 focus:ring-2 focus:ring-ring";
@@ -157,11 +157,11 @@ function Booking() {
                 </label>
                 <label className="block text-sm">
                   <span className="eyebrow">Pickup city</span>
-                  <input name="pickup" required className={`${field} mt-2`} placeholder="Delhi" />
+                  <input name="pickup" required className={`${field} mt-2`} placeholder="Enter pickup city" />
                 </label>
                 <label className="block text-sm">
                   <span className="eyebrow">Drop city</span>
-                  <input name="drop" required className={`${field} mt-2`} placeholder="Jaipur" />
+                  <input name="drop" required className={`${field} mt-2`} placeholder="Enter drop city" />
                 </label>
                 <label className="block text-sm">
                   <span className="eyebrow">Travel date</span>
@@ -173,7 +173,7 @@ function Booking() {
                     name="passengers"
                     type="number"
                     min={1}
-                    defaultValue={4}
+                    placeholder="No. of passengers"
                     className={`${field} mt-2`}
                   />
                 </label>
