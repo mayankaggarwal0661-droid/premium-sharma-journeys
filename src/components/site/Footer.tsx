@@ -19,7 +19,7 @@ export function Footer() {
           </div>
           <p className="mt-4 max-w-xs text-sm opacity-70">
             Chauffeur-driven journeys across India — outstation trips, airport transfers and
-            curated tour packages, run with quiet precision since 2009.
+            curated tour packages, run with quiet precision since 2024.
           </p>
         </div>
 
@@ -44,19 +44,29 @@ export function Footer() {
         <div>
           <p className="text-[0.7rem] tracking-[0.28em] uppercase opacity-60">Reach us</p>
           <div className="mt-4 flex flex-col gap-2 text-sm opacity-80">
-            <a href="tel:+919000000000" className="hover:opacity-100">
-              +91 90000 00000
-            </a>
-            <a href="mailto:hello@sharmatours.in" className="hover:opacity-100">
-              hello@sharmatours.in
+            <div className="flex flex-col">
+              <a href="tel:+919414141411" className="hover:opacity-100">
+                +91 94141 41411
+              </a>
+              <a href="tel:+918755557544" className="hover:opacity-100">
+                +91 87555 57544
+              </a>
+            </div>
+            <a href="mailto:sharmatourandtravls@gmail.com" className="hover:opacity-100">
+              sharmatourandtravls@gmail.com
             </a>
             <span>Open 24 x 7 for bookings</span>
           </div>
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="container-x flex flex-col gap-2 py-6 text-xs opacity-60 sm:flex-row sm:justify-between">
-          <span>© {new Date().getFullYear()} Sharma Tour &amp; Travels</span>
+        <div className="container-x flex flex-col items-center gap-4 py-6 text-xs opacity-60 sm:flex-row sm:justify-between">
+          <div className="flex gap-4">
+            <span>© {new Date().getFullYear()} Sharma Tour &amp; Travels</span>
+            <Link to="/terms" className="hover:opacity-100 transition-opacity underline decoration-white/30 underline-offset-4">
+              Terms & Services
+            </Link>
+          </div>
           <span>Drive comfortable. Arrive calm.</span>
         </div>
       </div>

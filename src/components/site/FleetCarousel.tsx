@@ -1,15 +1,13 @@
-import innova from "@/assets/car-innova.jpg";
-import ertiga from "@/assets/car-ertiga.jpg";
-import swift from "@/assets/car-swift.jpg";
-import dzire from "@/assets/car-dzire.jpg";
-import tempo from "@/assets/car-tempo.jpg";
+import innova from "@/assets/showroom_innova.jpg";
+import ertiga from "@/assets/showroom_ertiga.jpg";
+import dzire from "@/assets/showroom_dzire.jpg";
+import tempo from "@/assets/showroom_tempo.jpg";
 
 export const fleet = [
-  { name: "Innova Crysta", seats: "6 + 1 seater", rate: "₹18 / km", img: innova },
-  { name: "Ertiga", seats: "6 + 1 seater", rate: "₹14 / km", img: ertiga },
-  { name: "Swift", seats: "4 + 1 seater", rate: "₹11 / km", img: swift },
-  { name: "Swift Dzire", seats: "4 + 1 seater", rate: "₹12 / km", img: dzire },
-  { name: "Tempo Traveller", seats: "12 + 1 seater", rate: "₹24 / km", img: tempo },
+  { name: "Swift Dzire Tour", seats: "4 + 1 seater", img: dzire },
+  { name: "Tempo Traveller", seats: "12 + 1 seater", img: tempo },
+  { name: "Innova Crysta", seats: "6 + 1 seater", img: innova },
+  { name: "Ertiga", seats: "6 + 1 seater", img: ertiga },
 ];
 
 export function FleetCarousel() {
@@ -40,7 +38,6 @@ export function FleetCarousel() {
                   {car.seats}
                 </p>
               </div>
-              <span className="text-sm font-medium text-gold-foreground">{car.rate}</span>
             </div>
           </article>
         ))}
