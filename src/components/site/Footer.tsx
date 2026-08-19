@@ -45,8 +45,8 @@ export function Footer() {
           <p className="text-[0.7rem] tracking-[0.28em] uppercase opacity-60">Reach us</p>
           <div className="mt-4 flex flex-col gap-2 text-sm opacity-80">
             <div className="flex flex-col">
-              <a href="tel:+919414141411" className="hover:opacity-100">
-                +91 94141 41411
+              <a href="tel:+919194141411" className="hover:opacity-100">
+                +91 91941 41411
               </a>
               <a href="tel:+918755557544" className="hover:opacity-100">
                 +91 87555 57544

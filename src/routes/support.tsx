@@ -11,7 +11,7 @@ const UPI_ID = "vanshsharma89090@okhdfcbank"; // Real UPI ID
 const GOOGLE_REVIEW_URL =
   "https://www.google.com/maps/search/Sharma+Tour+and+Travels/"; // Google Maps search
 const WEBSITE_URL = "http://localhost:8080"; // update with deployed URL when live
-const WHATSAPP_NUMBER = "9194141411";      // +91 94141 41411
+const WHATSAPP_NUMBER = "919194141411";      // +91 91941 41411
 // ────────────────────────────────────────────────
 
 export const Route = createFileRoute("/support")({
@@ -217,7 +217,7 @@ function DonateModal({ initialAmount, onClose }: { initialAmount: number; onClos
 
         <p className="mt-4 text-xs text-muted-foreground">
           After payment, WhatsApp us your screenshot at{" "}
-          <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="underline">+91 94141 41411</a> or{" "}
+          <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="underline">+91 91941 41411</a> or{" "}
           <a href={`https://wa.me/918755557544`} className="underline">+91 87555 57544</a>
         </p>
       </div>
@@ -470,8 +470,8 @@ function Support() {
                 <div>
                   <p className="eyebrow mb-1">Phone</p>
                 <div className="flex flex-col gap-1">
-                  <a href="tel:+919414141411" className="font-display text-2xl hover:text-gold transition-colors duration-300">
-                    +91 94141 41411
+                  <a href="tel:+919194141411" className="font-display text-2xl hover:text-gold transition-colors duration-300">
+                    +91 91941 41411
                   </a>
                   <a href="tel:+918755557544" className="font-display text-2xl hover:text-gold transition-colors duration-300">
                     +91 87555 57544

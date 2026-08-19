@@ -131,7 +131,7 @@ function Booking() {
                 
                 const text = `Hi Sharma Tour & Travels, I would like to book a cab.\n\n*Car:* ${car}\n*Trip Type:* ${trip}\n*Name:* ${name}\n*Phone:* ${phone}\n*Pickup:* ${pickup}\n*Drop:* ${drop}\n*Date:* ${date}\n*Passengers:* ${passengers}\n*Notes:* ${notes}\n\nPlease let me know what the final negotiated amount will be.`;
                 
-                window.open(`https://wa.me/9194141411?text=${encodeURIComponent(text)}`, "_blank");
+                window.open(`https://wa.me/919194141411?text=${encodeURIComponent(text)}`, "_blank");
                 setSent(true);
               }}
             >
@@ -152,7 +152,7 @@ function Booking() {
                     required
                     type="tel"
                     className={`${field} mt-2`}
-                    placeholder="+91 94141 41411"
+                    placeholder="+91 91941 41411"
                   />
                 </label>
                 <label className="block text-sm">
@@ -278,10 +278,10 @@ function Booking() {
                 </p>
                 <div className="mt-4 flex flex-col gap-1">
                   <a
-                    href="tel:+919414141411"
+                    href="tel:+919194141411"
                     className="font-display text-2xl hover:text-gold transition-colors duration-300"
                   >
-                    +91 94141 41411
+                    +91 91941 41411
                   </a>
                   <a
                     href="tel:+918755557544"
