@@ -487,8 +487,7 @@ function Support() {
                 <div>
                   <p className="eyebrow mb-1">Office</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Haridwar, Uttarakhand<br />
-                    Open 9 AM to 9 PM · Phones 24×7
+                    Haridwar, Uttarakhand
                   </p>
                 </div>
               </div>
