@@ -487,7 +487,7 @@ function Support() {
                 <div>
                   <p className="eyebrow mb-1">Office</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    24 Station Road, Near Bus Stand<br />
+                    Haridwar, Uttarakhand<br />
                     Open 9 AM to 9 PM · Phones 24×7
                   </p>
                 </div>
