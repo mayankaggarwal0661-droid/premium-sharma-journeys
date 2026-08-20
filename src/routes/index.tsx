@@ -2,8 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { FleetCarousel } from "@/components/site/FleetCarousel";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import AutoScroll from "embla-carousel-auto-scroll";
+
 import { Star, MapPin } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import hero from "@/assets/hero.jpg";
@@ -467,15 +466,10 @@ function Home() {
             <div className="gold-rule" />
             <h2 className="mt-5 text-4xl font-medium md:text-5xl">What travellers say</h2>
           </FadeUp>
-          <div className="mt-12">
-            <Carousel
-              opts={{ align: "start", loop: true, dragFree: true }}
-              plugins={[AutoScroll({ speed: 1.5, stopOnInteraction: false })]}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-4">
-                {reviews.map((review, index) => (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+          <div className="mt-12 relative overflow-hidden group">
+            <div className="marquee-track gap-6 group-hover:[animation-play-state:paused]">
+                {[...reviews, ...reviews].map((review, index) => (
+                  <div key={index} className="w-[280px] shrink-0 sm:w-[380px]">
                     <div className="card-lux flex h-full flex-col p-6">
                       <div className="flex items-center gap-2 mb-4">
                         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-bold">
@@ -493,14 +487,11 @@ function Home() {
                       </div>
                       <p className="text-sm text-muted-foreground flex-grow">"{review.text}"</p>
                     </div>
-                  </CarouselItem>
+                  </div>
                 ))}
-              </CarouselContent>
-              <div className="hidden md:block">
-                <CarouselPrevious className="-left-4 bg-background" />
-                <CarouselNext className="-right-4 bg-background" />
-              </div>
-            </Carousel>
+            </div>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-background to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-background to-transparent" />
           </div>
         </div>
       </section>
