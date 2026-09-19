@@ -26,17 +26,14 @@ export function Nav() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      if (window.innerWidth < 768) {
-        if (currentScrollY < 50) {
-          setIsVisible(true);
-        } else if (currentScrollY < lastScrollY) {
-          setIsVisible(true);
-        } else if (currentScrollY > lastScrollY && currentScrollY > 50) {
-          setIsVisible(false);
-        }
-      } else {
+      if (currentScrollY < 50) {
         setIsVisible(true);
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
       }
+      
       lastScrollY = currentScrollY;
     };
 
