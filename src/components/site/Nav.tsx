@@ -11,6 +11,7 @@ const links = [
 
 export function Nav() {
   const [open, setOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -19,8 +20,39 @@ export function Nav() {
     };
   }, [open]);
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (window.innerWidth < 768) {
+        if (currentScrollY < 50) {
+          setIsVisible(true);
+        } else if (currentScrollY < lastScrollY) {
+          setIsVisible(true);
+        } else if (currentScrollY > lastScrollY && currentScrollY > 50) {
+          setIsVisible(false);
+        }
+      } else {
+        setIsVisible(true);
+      }
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="glass-nav sticky top-0 z-50">
+    <header 
+      className={`glass-nav sticky top-0 z-50 transition-transform duration-300 ${!isVisible ? "-translate-y-full" : "translate-y-0"}`}
+    >
       <nav className="container-x flex h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img
