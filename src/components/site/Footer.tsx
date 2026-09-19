@@ -4,7 +4,7 @@ import logo from "@/assets/logo.png";
 export function Footer() {
   return (
     <footer className="mt-24 bg-ink text-ink-foreground">
-      <div className="container-x grid gap-10 py-16 md:grid-cols-3">
+      <div className="container-x grid gap-10 py-16 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
             <img
@@ -56,6 +56,28 @@ export function Footer() {
               sharmatourandtravls@gmail.com
             </a>
             <span>Open 24 x 7 for bookings</span>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-[0.7rem] tracking-[0.28em] uppercase opacity-60">Socials</p>
+          <div className="mt-4 flex flex-col gap-2 text-sm">
+            <a
+              href="https://www.instagram.com/sharmatourntravels?stkn=eTVmZWpkZzRnZ3lm"
+              target="_blank"
+              rel="noreferrer"
+              className="opacity-80 transition-opacity hover:opacity-100"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/share/14m1eRokXQN/"
+              target="_blank"
+              rel="noreferrer"
+              className="opacity-80 transition-opacity hover:opacity-100"
+            >
+              Facebook
+            </a>
           </div>
         </div>
       </div>
